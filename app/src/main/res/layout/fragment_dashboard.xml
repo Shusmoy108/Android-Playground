@@ -10,25 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp">
-
+        <include
+            android:id="@+id/timeCard"
+            layout="@layout/time_card"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
         <!-- Eid Event Card -->
         <com.example.examproapplication.ui.eventcard.EventCard
             android:id="@+id/eidEventCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeCard"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="16dp"/>
 
-<!--        <com.example.examproapplication.ui.time.TimeCard-->
-<!--            android:id="@+id/timeCard"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/eidEventCard"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:layout_marginTop="16dp"/>-->
         <!-- Prayer Time Title -->
         <TextView
             android:id="@+id/prayerTitle"
@@ -38,7 +37,7 @@
             android:textStyle="bold"
             android:gravity="start"
             android:textColor="@android:color/black"
-            app:layout_constraintTop_toBottomOf="@id/eidEventCard"
+            app:layout_constraintTop_toBottomOf="@id/timeCard"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_margin="8dp"
