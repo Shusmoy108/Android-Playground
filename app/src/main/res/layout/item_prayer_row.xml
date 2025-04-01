@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Row Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/prayerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/adhanTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/iqamahTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <!-- Row Divider (Added via Adapter in Java) -->
+    <View
+        android:id="@+id/rowDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+</LinearLayout>
