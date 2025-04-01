@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.examproapplication.databinding.FragmentDashboardBinding;
 import com.example.examproapplication.ui.eventcard.Event;
 import com.example.examproapplication.ui.eventcard.EventCard;
+import com.example.examproapplication.ui.time.TimeCard;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,11 @@ public class DashboardFragment extends Fragment {
         // Create sample Eid event data
         Event event = new Event("Eid-ul Fitr", "8:00 AM, 10:00 AM, 11:30 AM", "Plano, TX 75074", "Ongoing");
         eidEventCard.setEventData(event);
-
+//        TimeCard timeCardView = binding.timeCard;
+//
+//// Set the title and time dynamically
+//        timeCardView.setTimeTitle("Next Prayer In");
+//        timeCardView.setTimeString("1 hour 30 min");
         final TextView prayerTitle = binding.prayerTitle;
         prayerTitle.setText("Prayer Time");
         final TextView jumuaTitle = binding.jumuaTitle;
